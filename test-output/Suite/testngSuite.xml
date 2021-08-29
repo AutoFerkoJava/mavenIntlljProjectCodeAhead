@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite
+        name="Selenium easy automated tests">
+    <parameter name="browser" value="chrome"/>
+    <!--<parameter name="browser" value="firefox"/> -->
+    <listeners>
+        <listener class-name="com.ferkoautomation.kfcourse.framework.seleniumeasy.automation.tools.ExtentReportNG" />
+    </listeners>
+
+    <test name="loginFormTest">
+        <classes>
+            <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.loginFormTest.Story01LoginTest"></class>
+
+        </classes>
+    </test>
+
+    <test name="alertsTests">
+        <classes>
+            <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.alertTests.Story02AlertsJsTest"></class>
+
+        </classes>
+    </test>
+
+    <test name="dynamicControlsTests">
+        <classes>
+            <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.dynamicControlsTests.Story03AddRemoveCheckboxTest"></class>
+
+        </classes>
+    </test>
+
+    <test name="geolocationTest">
+        <classes>
+            <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.geolocationTest.Story04GeolocationTest"></class>
+
+        </classes>
+    </test>
+
+
+</suite>
