@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 public class Story02AlertsJsTest extends ManagerSeleniumEasy {
     @Test
     public  void tc02_AlertsJsTest() {
-        driver.navigate().to("https://the-internet.herokuapp.com/");
+        //driver.navigate().to("https://the-internet.herokuapp.com/");
+        driver.get("https://the-internet.herokuapp.com/");
         alertsPage.javaScriptAlerts();
         alertsPage.jsAlert();
         driver.switchTo().alert().accept();

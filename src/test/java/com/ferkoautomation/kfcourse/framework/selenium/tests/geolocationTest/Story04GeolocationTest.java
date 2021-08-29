@@ -9,7 +9,8 @@ import org.testng.annotations.Test;
     public class Story04GeolocationTest extends ManagerSeleniumEasy {
     @Test
     public  void tc04_GeolocationTest() {
-        driver.navigate().to("https://the-internet.herokuapp.com/");
+        //driver.navigate().to("https://the-internet.herokuapp.com/");
+        driver.get("https://the-internet.herokuapp.com/");
         geolocationPage.clickGeolocation();
         geolocationPage.whereAmI();
         geolocationPage.seeItOnGoogle();

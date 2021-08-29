@@ -7,7 +7,8 @@ public class Story03AddRemoveCheckboxTest extends ManagerSeleniumEasy {
 
     @Test
     public void tc03_AddRemoveCheckbox (){
-        driver.navigate().to("https://the-internet.herokuapp.com/");
+        //driver.navigate().to("https://the-internet.herokuapp.com/");
+        driver.get("https://the-internet.herokuapp.com/");
         dynamicControlsPage.clickDynamicControlsLink();
         dynamicControlsPage.clickCheckbox();
         dynamicControlsPage.removeCheckbox();
