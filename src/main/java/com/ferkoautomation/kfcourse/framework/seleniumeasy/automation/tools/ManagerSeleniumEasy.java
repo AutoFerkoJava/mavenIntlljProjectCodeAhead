@@ -53,10 +53,10 @@ public class ManagerSeleniumEasy {
     @Parameters({"browser"})
     @BeforeMethod
     public void prepareTests(@Optional("chrome") String browser) {
-        System.out.println(WebDriverManager.chromedriver().getDriverVersions());
+        //System.out.println(WebDriverManager.chromedriver().getDriverVersions());
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            System.out.println(WebDriverManager.chromedriver().getDownloadedDriverVersion());
+            //System.out.println(WebDriverManager.chromedriver().getDownloadedDriverVersion());
             chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("start-maximized");
             driver = new ChromeDriver(chromeOptions);
