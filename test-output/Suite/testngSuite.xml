@@ -8,28 +8,28 @@
         <listener class-name="com.ferkoautomation.kfcourse.framework.seleniumeasy.automation.tools.ExtentReportNG" />
     </listeners>
 
-    <test name="loginFormTest">
+    <test name="com.ferkoautomation.kfcourse.framework.selenium.tests.loginFormTest">
         <classes>
             <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.loginFormTest.Story01LoginTest"></class>
 
         </classes>
     </test>
 
-    <test name="alertsTests">
+    <test name="com.ferkoautomation.kfcourse.framework.selenium.tests.alertTests">
         <classes>
             <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.alertTests.Story02AlertsJsTest"></class>
 
         </classes>
     </test>
 
-    <test name="dynamicControlsTests">
+    <test name="com.ferkoautomation.kfcourse.framework.selenium.tests.dynamicControlsTests">
         <classes>
             <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.dynamicControlsTests.Story03AddRemoveCheckboxTest"></class>
 
         </classes>
     </test>
 
-    <test name="geolocationTest">
+    <test name="com.ferkoautomation.kfcourse.framework.selenium.tests.geolocationTest">
         <classes>
             <class name="com.ferkoautomation.kfcourse.framework.selenium.tests.geolocationTest.Story04GeolocationTest"></class>
 

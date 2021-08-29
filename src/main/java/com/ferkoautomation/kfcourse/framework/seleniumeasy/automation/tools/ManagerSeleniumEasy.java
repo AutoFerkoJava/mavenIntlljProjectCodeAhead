@@ -1,3 +1,9 @@
+/**
+ @author Kim Ferko
+ QA Automation Engineer
+ Written by Kim Ferko, "Kim Ferko Test Automation Engineer Services", kim.ferko1@gmail.com
+ Last update: 29.08.2021
+ */
 package com.ferkoautomation.kfcourse.framework.seleniumeasy.automation.tools;
 
 import com.ferkoautomation.kfcourse.framework.seleniumeasy.automation.alertsPage.AlertsPage;
@@ -18,7 +24,6 @@ import java.util.concurrent.TimeUnit;
 
 public class ManagerSeleniumEasy {
     public String internetherokuappUnderTest;
-    //public String welcometointernetherokuapp;
     public String username;
     public String password;
     private String pathToGlobalVariables = "src\\test\\resources\\globalvariables.properties";
@@ -39,7 +44,6 @@ public class ManagerSeleniumEasy {
         FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariables);
         properties.load(fileInputStream);
         internetherokuappUnderTest = properties.getProperty("url");
-        //welcometointernetherokuapp = properties.getProperty("urlwelcome");
         username = properties.getProperty("username");
         System.out.println(username);
         password = properties.getProperty("password");
@@ -63,7 +67,6 @@ public class ManagerSeleniumEasy {
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(internetherokuappUnderTest);
-        //driver.get(welcometointernetherokuapp);
         loginForm = new  LoginForm(driver);
         loginForm.formAuthentication();
         loginForm.username(username);
